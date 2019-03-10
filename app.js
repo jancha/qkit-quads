@@ -64,7 +64,7 @@ qKit.update(() => {
     }
     // sin color wave for the green channel
     for (let i = 0; i < quadRows; i++){
-        let green = Math.sin((counter)/2/Math.PI/2+Math.PI*2/quadCells*i);
+        let green = Math.sin((counter)/2/Math.PI/2+Math.PI*2/quadRows*i);
         for (let j = 0; j < quadCells; j++){
             quads[i*quadRows+j].extension.green = green;
         }
